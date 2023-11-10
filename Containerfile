@@ -10,9 +10,20 @@
 
 # !! Warning: changing these might not do anything for you. Read comment above.
 ARG IMAGE_MAJOR_VERSION=39
-ARG BASE_IMAGE_URL=ghcr.io/ublue-os/silverblue-main
+ARG BASE_IMAGE_URL=ghcr.io/ublue-os/kinoite-nvidia
 
 FROM ${BASE_IMAGE_URL}:${IMAGE_MAJOR_VERSION}
+
+# Workaround for
+# Checking out packages... done
+# error: Checkout binutils-2.40-13.fc39.x86_64: Hardlinking b0/5c0ba45128dbfb28a8089c44e19f93cd0e4531678f017696f69515b916f6c3.file to ld: File exists
+#
+# From Universal Blue Discord:
+# akdev — 11/08/2023 12:30 PM
+# That’s breakage from an ugly workaround around a bug in the alternatives system
+# Not really, if you have a custom image you can remove the link in /usr/bin/ld
+
+RUN rm -r /usr/bin/ld
 
 # The default recipe is set to the recipe's default filename
 # so that `podman build` should just work for most people.

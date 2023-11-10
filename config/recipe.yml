@@ -1,10 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: startingpoint
+name: ublue-os-kinoite-nvidia
 # description will be included in the image's metadata
 description: A starting point for further customization of uBlue images. Make your own! https://ublue.it/making-your-own/
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-nvidia
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -24,8 +24,28 @@ modules:
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
+      - 'gcc-c++'
+      - bridge-utils
+      - btrfsd
+      - edk2-ovmf
+      - emacs
+      - gstreamer1-plugin-openh264
+      - gstreamer1-plugins-bad-free-extras
+      - gstreamer1-plugins-ugly gstreamer1-vaapi
+      - guestfs-tools
+      - libvirt
+      - mold
+      - pinentry-tty
+      - python3-ipython
+      - python3-pip
+      - qemu-kvm
+      #- sublime-merge
+      #- sublime-text
+      - syncthing
+      - virt-install
+      - virt-manager
+      - virt-top
+      - virt-viewer
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -34,7 +54,7 @@ modules:
     install:
       - justfiles # add "!include /usr/share/ublue-os/just/100-bling.just"
                   # in your custom.just (added by default) or local justfile
-      - nix-installer # shell shortcuts for determinate system's nix installers
+      # - nix-installer # shell shortcuts for determinate system's nix installers
       - ublue-os-wallpapers
       # - ublue-update # https://github.com/ublue-os/ublue-update
       # - 1password # install 1Password (stable) and `op` CLI tool
@@ -44,7 +64,6 @@ modules:
       # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
       # - laptop # installs TLP and configures your system for laptop usage
       # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
-
 
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
