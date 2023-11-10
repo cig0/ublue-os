@@ -43,6 +43,7 @@ modules:
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
       - guestfs-tools
+      - libnotify
       - libvirt
       #- libvirt-daemon
       #- libvirt-daemon-config-network
@@ -56,6 +57,7 @@ modules:
       - pinentry-tty
       - python3-ipython
       - python3-pip
+      -  python3-psutil
       #- qemu-kvm
       - sublime-merge
       - sublime-text
