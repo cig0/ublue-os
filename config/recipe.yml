@@ -44,11 +44,19 @@ modules:
       - gstreamer1-vaapi
       - guestfs-tools
       - libvirt
+      - libvirt-daemon
+      - libvirt-daemon-config-network
+      - libvirt-daemon-driver-interface
+      - libvirt-daemon-driver-network
+      - libvirt-daemon-driver-nwfilter
+      - libvirt-daemon-driver-qemu
+      - libvirt-daemon-driver-secret
+      - libvirt-daemon-driver-storage-core
       - mold
       - pinentry-tty
       - python3-ipython
       - python3-pip
-      - qemu-kvm
+      #- qemu-kvm
       - sublime-merge
       - sublime-text
       - syncthing
