@@ -49,7 +49,7 @@ modules:
       - libvirt-daemon-driver-interface
       - libvirt-daemon-driver-network
       - libvirt-daemon-driver-nwfilter
-      - libvirt-daemon-driver-qemu
+      #- libvirt-daemon-driver-qemu
       - libvirt-daemon-driver-secret
       - libvirt-daemon-driver-storage-core
       - mold
