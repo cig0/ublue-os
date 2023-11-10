@@ -44,14 +44,14 @@ modules:
       - gstreamer1-vaapi
       - guestfs-tools
       - libvirt
-      - libvirt-daemon
-      - libvirt-daemon-config-network
-      - libvirt-daemon-driver-interface
-      - libvirt-daemon-driver-network
-      - libvirt-daemon-driver-nwfilter
+      #- libvirt-daemon
+      #- libvirt-daemon-config-network
+      #- libvirt-daemon-driver-interface
+      #- libvirt-daemon-driver-network
+      #- libvirt-daemon-driver-nwfilter
       #- libvirt-daemon-driver-qemu
-      - libvirt-daemon-driver-secret
-      - libvirt-daemon-driver-storage-core
+      #- libvirt-daemon-driver-secret
+      #- libvirt-daemon-driver-storage-core
       - mold
       - pinentry-tty
       - python3-ipython
@@ -60,10 +60,10 @@ modules:
       - sublime-merge
       - sublime-text
       - syncthing
-      - virt-install
-      - virt-manager
-      - virt-top
-      - virt-viewer
+      #- virt-install
+      #- virt-manager
+      #- virt-top
+      #- virt-viewer
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -72,12 +72,12 @@ modules:
     install:
       - justfiles # add "!include /usr/share/ublue-os/just/100-bling.just"
                   # in your custom.just (added by default) or local justfile
-      # - nix-installer # shell shortcuts for determinate system's nix installers
-      #- ublue-os-wallpapers
-      # - ublue-update # https://github.com/ublue-os/ublue-update
+      - nix-installer # shell shortcuts for determinate system's nix installers
+      - ublue-os-wallpapers
+      - ublue-update # https://github.com/ublue-os/ublue-update
       # - 1password # install 1Password (stable) and `op` CLI tool
       # - dconf-update-service # a service unit that updates the dconf db on boot
-      # - devpod # https://devpod.sh/ as an rpm
+      - devpod # https://devpod.sh/ as an rpm
       # - gnome-vrr # enables gnome-vrr for your image
       # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
       # - laptop # installs TLP and configures your system for laptop usage
