@@ -58,7 +58,7 @@ modules:
       - python3-pip
       - python3-psutil
       - qemu-kvm
-      #- sublime-merge
+      - sublime-merge
       #- sublime-text
       - syncthing
       - virt-install
