@@ -29,7 +29,7 @@ modules:
       #- 'gcc-c++'
       #- bridge-utils
       - btrfsd
-      - code
+      #- code
       #- edk2-ovmf
       #- emacs
       # Needs: fedora-cisco-openh264.repo
@@ -59,8 +59,8 @@ modules:
       - python3-pip
       - python3-psutil
       #- qemu-kvm
-      - sublime-merge
-      - sublime-text
+      #- sublime-merge
+      #- sublime-text
       - syncthing
       #- virt-install
       #- virt-manager
