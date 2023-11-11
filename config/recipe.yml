@@ -26,49 +26,48 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os-kinoite-nvidia/live/custom/sublime-text.repo
       - https://raw.githubusercontent.com/cig0/ublue-os-kinoite-nvidia/live/custom/vscode.repo
     install:
-      #- 'gcc-c++'
-      #- bridge-utils
+      - 'gcc-c++'
+      - bridge-utils
       - btrfsd
       #- code
-      #- edk2-ovmf
-      #- emacs
+      - edk2-ovmf
+      - emacs
       # Needs: fedora-cisco-openh264.repo
       #- gstreamer1-plugin-openh264
-      #- gstreamer1-plugin-libav
-      #- gstreamer1-plugin-mpg123
-      #- gstreamer1-plugins-bad-free
-      #- gstreamer1-plugins-bad-free-extras
-      #- gstreamer1-plugins-bad-free-fluidsynth
-      #- gstreamer1-plugins-bad-free-opencv
-      #- gstreamer1-plugins-ugly
-      #- gstreamer1-vaapi
-      #- guestfs-tools
+      - gstreamer1-plugin-libav
+      - gstreamer1-plugin-mpg123
+      - gstreamer1-plugins-bad-free
+      - gstreamer1-plugins-bad-free-extras
+      - gstreamer1-plugins-bad-free-fluidsynth
+      - gstreamer1-plugins-ugly
+      - gstreamer1-vaapi
+      - guestfs-tools
       - libnotify
-      #- libvirt
-      #- libvirt-daemon
-      #- libvirt-daemon-config-network
-      #- libvirt-daemon-driver-interface
-      #- libvirt-daemon-driver-network
-      #- libvirt-daemon-driver-nwfilter
-      #- libvirt-daemon-driver-qemu
-      #- libvirt-daemon-driver-secret
-      #- libvirt-daemon-driver-storage-core
+      - libvirt
+      - libvirt-daemon
+      - libvirt-daemon-config-network
+      - libvirt-daemon-driver-interface
+      - libvirt-daemon-driver-network
+      - libvirt-daemon-driver-nwfilter
+      - libvirt-daemon-driver-qemu
+      - libvirt-daemon-driver-secret
+      - libvirt-daemon-driver-storage-core
       - mold
       - pinentry-tty
       - python3-ipython
       - python3-pip
       - python3-psutil
-      #- qemu-kvm
+      - qemu-kvm
       #- sublime-merge
       #- sublime-text
       - syncthing
-      #- virt-install
-      #- virt-manager
-      #- virt-top
-      #- virt-viewer
+      - virt-install
+      - virt-manager
+      - virt-top
+      - virt-viewer
     remove:
-      #- firefox # default firefox removed in favor of flatpak
-      #- firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+      - firefox # default firefox removed in favor of flatpak
+      - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
@@ -79,7 +78,7 @@ modules:
       - ublue-update # https://github.com/ublue-os/ublue-update
       # - 1password # install 1Password (stable) and `op` CLI tool
       # - dconf-update-service # a service unit that updates the dconf db on boot
-      - devpod # https://devpod.sh/ as an rpm
+      # - devpod # https://devpod.sh/ as an rpm
       # - gnome-vrr # enables gnome-vrr for your image
       # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
       # - laptop # installs TLP and configures your system for laptop usage
