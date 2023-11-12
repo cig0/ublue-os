@@ -41,7 +41,7 @@ modules:
       - dua-cli
       - duf
       - edk2-ovmf
-      - emacs-nox
+      - emacs
       - fd-find
       - fdupes
       - fzf
