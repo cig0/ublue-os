@@ -50,10 +50,14 @@ COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 # Not really, if you have a custom image you can remove the link in /usr/bin/ld
 
 # Run the build script, then clean up temp files and finalize container build.
-RUN mv /usr/bin/ld /usr/bin/ld.disabled-for-build \
-    && chmod +x /tmp/build.sh \
+#RUN mv /usr/bin/ld /usr/bin/ld.disabled-for-build \
+#    && chmod +x /tmp/build.sh \
+#    && /tmp/build.sh \
+#    && rm -rf /tmp/* /var/* \
+#    && mv /usr/bin/ld.disabled-for-build /usr/bin/ld \
+#    && ostree container commit
+RUN chmod +x /tmp/build.sh \
     && /tmp/build.sh \
     && rm -rf /tmp/* /var/* \
-    && mv /usr/bin/ld.disabled-for-build /usr/bin/ld \
     && ostree container commit
 
