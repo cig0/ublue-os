@@ -146,6 +146,7 @@ modules:
       - Bitwarde: com.bitwarden.desktop
       - Brave: com.brave.Browser
       - Discord: com.discordapp.Discord
+      - Emacs: org.gnu.emacs
       - Flatseal: com.github.tchx84.Flatseal
       - Flatsweep: io.github.giantpinkrobots.flatsweep
       - Inkscape: org.inkscape.Inkscape
