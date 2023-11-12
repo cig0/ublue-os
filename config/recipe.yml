@@ -136,7 +136,6 @@ modules:
   #- type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      - Okular: org.kde.okular
       # - Celluloid: io.github.celluloid_player.Celluloid
       # - Krita: org.kde.krita
 
