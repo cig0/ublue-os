@@ -146,7 +146,6 @@ modules:
       - Bitwarde: com.bitwarden.desktop
       - Brave: com.brave.Browser
       - Discord: com.discordapp.Discord
-      - Emacs: org.gnu.emacs
       - Flatseal: com.github.tchx84.Flatseal
       - Flatsweep: io.github.giantpinkrobots.flatsweep
       - Inkscape: org.inkscape.Inkscape
@@ -165,6 +164,7 @@ modules:
       - TorBrowser: com.github.micahflee.torbrowser-launcher
       - UltimateMediaDownloader: com.ktechpit.ultimate-media-downloader
       - Vorta: com.borgbase.Vorta
+      - Warehouse: io.github.flattool.Warehouse
       - YouTubeDownloader: io.github.aandrew_me.ytdn
       - Zoom: us.zoom.Zoom
 
