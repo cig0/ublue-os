@@ -81,7 +81,7 @@ modules:
       - lnav
       - lynis
       - mold
-      - ncdu # Needs urgent upgrade!
+      - ncdu # Needs urgent version bump!
       - neofetch
       - neovim
       - nmap
@@ -104,7 +104,7 @@ modules:
       - tesseract
       - tokei
       - translate-shell
-      - ugrep # Needs urgent upgrade!
+      - ugrep # Needs urgent version bump!
       - vagrant
       - vdpauinfo
       - virt-install
