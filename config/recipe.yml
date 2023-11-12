@@ -28,6 +28,7 @@ modules:
     install:
       - 'gcc-c++'
       - ansible
+      - awscli2
       - borgbackup
       - bridge-utils
       - bat
