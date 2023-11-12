@@ -38,7 +38,7 @@ modules:
       - code
       - difftastic
       - dnstracer
-      - dua
+      - dua-cli
       - duf
       - edk2-ovmf
       - emacs
@@ -133,7 +133,7 @@ modules:
       # - laptop # installs TLP and configures your system for laptop usage
       # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
-  - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
+  #- type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
       # - Celluloid: io.github.celluloid_player.Celluloid
