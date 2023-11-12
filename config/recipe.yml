@@ -115,8 +115,8 @@ modules:
       - wl-clipboard
       - zoxide
     remove:
-      - firefox # default firefox removed in favor of flatpak
-      - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+      #- firefox # default firefox removed in favor of flatpak
+      #- firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
@@ -136,6 +136,7 @@ modules:
   #- type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
+      - Okular: org.kde.okular
       # - Celluloid: io.github.celluloid_player.Celluloid
       # - Krita: org.kde.krita
 
@@ -143,3 +144,4 @@ modules:
     scripts:
       # this sets up the proper policy & signing files for signed images to work
       - signing.sh
+
