@@ -41,21 +41,7 @@ COPY modules /tmp/modules/
 # It is copied from the official container image since it's not available as an RPM.
 COPY --from=docker.io/mikefarah/yq /usr/bin/yq /usr/bin/yq
 
-# Workaround for:
-# Checking out packages... done
-# error: Checkout binutils-2.40-13.fc39.x86_64: Hardlinking b0/5c0ba45128dbfb28a8089c44e19f93cd0e4531678f017696f69515b916f6c3.file to ld: File exists
-# From Universal Blue Discord:
-# akdev — 11/08/2023 12:30 PM
-# That’s breakage from an ugly workaround around a bug in the alternatives system
-# Not really, if you have a custom image you can remove the link in /usr/bin/ld
-
 # Run the build script, then clean up temp files and finalize container build.
-#RUN mv /usr/bin/ld /usr/bin/ld.disabled-for-build \
-#    && chmod +x /tmp/build.sh \
-#    && /tmp/build.sh \
-#    && rm -rf /tmp/* /var/* \
-#    && mv /usr/bin/ld.disabled-for-build /usr/bin/ld \
-#    && ostree container commit
 RUN chmod +x /tmp/build.sh \
     && /tmp/build.sh \
     && rm -rf /tmp/* /var/* \
