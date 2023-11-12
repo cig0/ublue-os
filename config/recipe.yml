@@ -27,11 +27,31 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os-kinoite-nvidia/live/custom/vscode.repo
     install:
       - 'gcc-c++'
+      - ansible
+      - borgbackup
       - bridge-utils
+      - bat
+      - bitlbee
+      - btop
       - btrfsd
+      - cargo
       - code
+      - difftastic
+      - dnstracer
+      - dua
+      - duf
       - edk2-ovmf
       - emacs
+      - fd-find
+      - fdupes
+      - fzf
+      - gh
+      - git-lfs
+      - glab
+      - golang
+      - goaccess
+      - golang-x-tools-gopls
+      - grpcurl
       # Needs: fedora-cisco-openh264.repo
       #- gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
@@ -42,6 +62,11 @@ modules:
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
       - guestfs-tools
+      - httpie
+      - hugo
+      - hyperfine
+      - inxi
+      - iotop
       - libnotify
       - libvirt
       - libvirt-daemon
@@ -52,19 +77,43 @@ modules:
       - libvirt-daemon-driver-qemu
       - libvirt-daemon-driver-secret
       - libvirt-daemon-driver-storage-core
+      - lftp
+      - lnav
+      - lynis
       - mold
+      - ncdu # Needs urgent upgrade!
+      - neofetch
+      - neovim
+      - nmap
+      - nodejs
+      - oathtool
       - pinentry-tty
+      - podman-compose
       - python3-ipython
       - python3-pip
       - python3-psutil
       - qemu-kvm
+      - ripgrep
+      - s-tui
+      - shellcheck
+      - strace
       #- sublime-merge
       #- sublime-text
       - syncthing
+      - tcpdump
+      - tesseract
+      - tokei
+      - translate-shell
+      - ugrep # Needs urgent upgrade!
+      - vagrant
+      - vdpauinfo
       - virt-install
       - virt-manager
       - virt-top
       - virt-viewer
+      - weechat
+      - wl-clipboard
+      - zoxide
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
