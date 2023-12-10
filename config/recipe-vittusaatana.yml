@@ -154,6 +154,7 @@ modules:
       - Inkscape: org.inkscape.Inkscape
       - KeePassXC: org.keepassxc.KeePassXC
       - Letterpress: io.gitlab.gregorni.Letterpress
+      - LibreOffice: org.libreoffice.LibreOffice
       - MPV: io.mpv.Mpv
       - Nheko: io.github.NhekoReborn.Nheko
       - Nicotine: org.nicotine_plus.Nicotine
