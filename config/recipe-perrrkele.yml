@@ -66,6 +66,7 @@ modules:
       - httpie
       - hugo
       - hyperfine
+      - intel-gpu-tools
       - inxi
       - iotop
       - libnotify
@@ -90,6 +91,7 @@ modules:
       - oathtool
       - pinentry-tty
       - podman-compose
+      - powertop
       - python3-ipython
       - python3-pip
       - python3-psutil
