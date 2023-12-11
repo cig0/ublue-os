@@ -18,7 +18,8 @@ on: # https://docs.github.com/en/actions/using-workflows/events-that-trigger-wor
   pull_request:
   workflow_dispatch:
 concurrency:
-  cancel-in-progress: true
+  group:
+    cancel-in-progress: true
 
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
