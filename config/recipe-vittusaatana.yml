@@ -68,6 +68,7 @@ modules:
       - hyperfine
       - inxi
       - iotop
+      - krusader
       - libnotify
       - libvirt
       - libvirt-daemon
