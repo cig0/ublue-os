@@ -143,18 +143,21 @@ modules:
       - KDE_digiKam: org.kde.digikam
       - KDE_Gwenview: org.kde.gwenview
       - KDE_Kcalc: org.kde.kcalc
+      - KDE_Krita: org.kde.krita
       - KDE_Neochat: org.kde.neochat
       - KDE_Okular: org.kde.okular
       - ArmCord: xyz.armcord.ArmCord
       - AsciiDraw: io.github.nokse22.asciidraw
       - Bitwarde: com.bitwarden.desktop
       - Brave: com.brave.Browser
+      - Darktable: org.darktable.Darktable
       - Discord: com.discordapp.Discord
       - Flatseal: com.github.tchx84.Flatseal
       - Flatsweep: io.github.giantpinkrobots.flatsweep
       - Inkscape: org.inkscape.Inkscape
       - KeePassXC: org.keepassxc.KeePassXC
       - Letterpress: io.gitlab.gregorni.Letterpress
+      - LightZone: io.github.ktgw0316.LightZone
       - LibreOffice: org.libreoffice.LibreOffice
       - MPV: io.mpv.Mpv
       - Nheko: io.github.NhekoReborn.Nheko
