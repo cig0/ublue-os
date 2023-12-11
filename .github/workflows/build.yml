@@ -18,8 +18,10 @@ on: # https://docs.github.com/en/actions/using-workflows/events-that-trigger-wor
   pull_request:
   workflow_dispatch:
 concurrency:
-  group:
-    cancel-in-progress: true
+  # github.workflow: name of the workflow
+  # github.event.pull_request.number || github.ref: pull request number or branch name if not a pull request
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
