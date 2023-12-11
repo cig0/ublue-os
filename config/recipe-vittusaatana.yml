@@ -145,6 +145,7 @@ modules:
       - KDE_digiKam: org.kde.digikam
       - KDE_Gwenview: org.kde.gwenview
       - KDE_Kcalc: org.kde.kcalc
+      - KDE_KColorChooser: org.kde.kcolorchooser
       - KDE_Krita: org.kde.krita
       - KDE_Neochat: org.kde.neochat
       - KDE_Okular: org.kde.okular
