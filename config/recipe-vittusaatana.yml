@@ -140,6 +140,7 @@ modules:
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
       - KDE_Akregator: org.kde.akregator
+      - KDE_digiKam: org.kde.digikam
       - KDE_Gwenview: org.kde.gwenview
       - KDE_Kcalc: org.kde.kcalc
       - KDE_Neochat: org.kde.neochat
