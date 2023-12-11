@@ -82,6 +82,7 @@ modules:
       - lftp
       - lnav
       - lynis
+      - mc
       - mold
       - ncdu # Needs urgent version bump!
       - neofetch
