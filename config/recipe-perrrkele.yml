@@ -69,6 +69,7 @@ modules:
       - intel-gpu-tools
       - inxi
       - iotop
+      - krusader
       - libnotify
       - libvirt
       - libvirt-daemon
@@ -82,6 +83,7 @@ modules:
       - lftp
       - lnav
       - lynis
+      - mc
       - mold
       - ncdu # Needs urgent version bump!
       - neofetch
