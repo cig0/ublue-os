@@ -146,6 +146,8 @@ modules:
       - KDE_Gwenview: org.kde.gwenview
       - KDE_Kcalc: org.kde.kcalc
       - KDE_KColorChooser: org.kde.kcolorchooser
+      - KDE_KDiff3: org.kde.kdiff3
+      - KDE_Kompare: org.kde.kompare
       - KDE_Krita: org.kde.krita
       - KDE_Neochat: org.kde.neochat
       - KDE_Okular: org.kde.okular
