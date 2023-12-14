@@ -155,7 +155,6 @@ modules:
       - KDE_Okular: org.kde.okular
       - ArmCord: xyz.armcord.ArmCord
       - AsciiDraw: io.github.nokse22.asciidraw
-      - Bitwarde: com.bitwarden.desktop
       - Brave: com.brave.Browser
       - Darktable: org.darktable.Darktable
       - Discord: com.discordapp.Discord
