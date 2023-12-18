@@ -106,6 +106,7 @@ modules:
       #- sublime-text
       - syncthing
       - tcpdump
+      - telnet
       - tesseract
       - tokei
       - translate-shell
