@@ -158,7 +158,6 @@ modules:
       - AsciiDraw: io.github.nokse22.asciidraw
       - Brave: com.brave.Browser
       - Darktable: org.darktable.Darktable
-      - Discord: com.discordapp.Discord
       - Flatseal: com.github.tchx84.Flatseal
       - Flatsweep: io.github.giantpinkrobots.flatsweep
       - Inkscape: org.inkscape.Inkscape
