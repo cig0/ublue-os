@@ -52,7 +52,6 @@ modules:
       - cockpit-sosreport
       - cockpit-storaged
       - cockpit-system
-      - cockpit-ws
       - code
       - difftastic
       - dnstracer
