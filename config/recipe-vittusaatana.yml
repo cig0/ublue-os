@@ -170,6 +170,7 @@ modules:
       - Nicotine: org.nicotine_plus.Nicotine
       - OpenLens: dev.k8slens.OpenLens
       - Parabolic: org.nickvision.tubeconverter
+      - PodmanDesktop: io.podman_desktop.PodmanDesktop
       - Shortwave: de.haeckerfelix.Shortwave
       - Slack: com.slack.Slack
       - Telegram: org.telegram.desktop
