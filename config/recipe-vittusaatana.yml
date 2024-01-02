@@ -29,6 +29,7 @@ modules:
       - 'gcc-c++'
       - ansible
       - awscli2
+      - blender
       - borgbackup
       - bridge-utils
       - bat
