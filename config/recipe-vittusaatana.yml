@@ -143,18 +143,19 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      - KDE_Akregator: org.kde.akregator
-      - KDE_digiKam: org.kde.digikam
-      - KDE_Gwenview: org.kde.gwenview
-      - KDE_Kcalc: org.kde.kcalc
-      - KDE_KColorChooser: org.kde.kcolorchooser
-      - KDE_KDiff3: org.kde.kdiff3
-      - KDE_Kompare: org.kde.kompare
-      - KDE_Krita: org.kde.krita
-      - KDE_Neochat: org.kde.neochat
-      - KDE_Okular: org.kde.okular
+      - KDE Akregator: org.kde.akregator
+      - KDE digiKam: org.kde.digikam
+      - KDE Gwenview: org.kde.gwenview
+      - KDE Kcalc: org.kde.kcalc
+      - KDE KColorChooser: org.kde.kcolorchooser
+      - KDE KDiff3: org.kde.kdiff3
+      - KDE Kompare: org.kde.kompare
+      - KDE Krita: org.kde.krita
+      - KDE Neochat: org.kde.neochat
+      - KDE Okular: org.kde.okular
+      - KDE Yakuake: org.kde.yakuake
       - ArmCord: xyz.armcord.ArmCord
-      - AsciiDraw: io.github.nokse22.asciidraw
+      - ASCII Draw: io.github.nokse22.asciidraw
       - Brave: com.brave.Browser
       - Darktable: org.darktable.Darktable
       - Discord: com.discordapp.Discord
@@ -170,17 +171,17 @@ modules:
       - Nicotine: org.nicotine_plus.Nicotine
       - OpenLens: dev.k8slens.OpenLens
       - Parabolic: org.nickvision.tubeconverter
-      - PodmanDesktop: io.podman_desktop.PodmanDesktop
+      - Podman Desktop: io.podman_desktop.PodmanDesktop
       - Shortwave: de.haeckerfelix.Shortwave
       - Slack: com.slack.Slack
       - Telegram: org.telegram.desktop
-      - TheGIMP: org.gimp.GIMP
+      - The GIMP: org.gimp.GIMP
       - Todoist: com.todoist.Todoist
-      - TorBrowser: com.github.micahflee.torbrowser-launcher
-      - UltimateMediaDownloader: com.ktechpit.ultimate-media-downloader
+      - Tor Browser: com.github.micahflee.torbrowser-launcher
+      - Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
       - Vorta: com.borgbase.Vorta
       - Warehouse: io.github.flattool.Warehouse
-      - YouTubeDownloader: io.github.aandrew_me.ytdn
+      - YouTube Downloader: io.github.aandrew_me.ytdn
       - Zoom: us.zoom.Zoom
 
   - type: script
