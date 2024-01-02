@@ -120,6 +120,7 @@ modules:
       - waydroid-selinux
       - weechat
       - wl-clipboard
+      - yakuake
       - zoxide
     remove:
       # - firefox # default firefox removed in favor of flatpak
@@ -153,7 +154,6 @@ modules:
       - KDE Krita: org.kde.krita
       - KDE Neochat: org.kde.neochat
       - KDE Okular: org.kde.okular
-      - KDE Yakuake: org.kde.yakuake
       - ArmCord: xyz.armcord.ArmCord
       - ASCII Draw: io.github.nokse22.asciidraw
       - Brave: com.brave.Browser
