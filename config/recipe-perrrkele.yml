@@ -37,6 +37,22 @@ modules:
       - btop
       - btrfsd
       - cargo
+      - cockpit
+      - cockpit-file-sharing
+      - cockpit-kdump
+      - cockpit-machines
+      - cockpit-navigator
+      - cockpit-networkmanager
+      - cockpit-ostree
+      - cockpit-packagekit
+      - cockpit-pcp.x86_64
+      - cockpit-podman
+      - cockpit-selinux
+      - cockpit-session-recording
+      - cockpit-sosreport
+      - cockpit-storaged
+      - cockpit-system
+      - cockpit-ws
       - code
       - difftastic
       - dnstracer
