@@ -85,6 +85,7 @@ modules:
       - lnav
       - lynis
       - mc
+      - merkuro
       - mold
       - ncdu # Needs urgent version bump!
       - neofetch
