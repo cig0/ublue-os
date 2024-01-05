@@ -67,6 +67,8 @@ modules:
       - httpie
       - hugo
       - hyperfine
+      - imhex
+      - imhex-patterns
       - intel-gpu-tools
       - inxi
       - iotop
