@@ -67,6 +67,7 @@ modules:
       - httpie
       - hugo
       - hyperfine
+      - hyprland
       - imhex
       - imhex-patterns
       - inxi
