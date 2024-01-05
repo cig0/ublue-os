@@ -46,6 +46,7 @@ modules:
       - emacs
       - fd-find
       - fdupes
+      - fuzzel
       - fzf
       - gh
       - git-lfs
