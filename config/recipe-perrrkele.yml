@@ -115,6 +115,7 @@ modules:
       - syncthing
       - tcpdump
       - telnet
+      - terminator
       - tesseract
       - tokei
       - translate-shell
