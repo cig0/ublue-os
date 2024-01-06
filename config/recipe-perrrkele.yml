@@ -147,22 +147,12 @@ modules:
       # - devpod # https://devpod.sh/ as an rpm
       # - gnome-vrr # enables gnome-vrr for your image
       # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
-      - laptop # installs TLP and configures your system for laptop usage
+      # - laptop # installs TLP and configures your system for laptop usage
       # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      - KDE Akregator: org.kde.akregator
-      - KDE digiKam: org.kde.digikam
-      - KDE Gwenview: org.kde.gwenview
-      - KDE Kcalc: org.kde.kcalc
-      - KDE KColorChooser: org.kde.kcolorchooser
-      - KDE KDiff3: org.kde.kdiff3
-      - KDE Kompare: org.kde.kompare
-      - KDE Krita: org.kde.krita
-      - KDE Neochat: org.kde.neochat
-      - KDE Okular: org.kde.okular
       - ArmCord: xyz.armcord.ArmCord
       - ASCII Draw: io.github.nokse22.asciidraw
       - Brave: com.brave.Browser
