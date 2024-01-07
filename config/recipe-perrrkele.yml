@@ -76,7 +76,6 @@ modules:
       - intel-gpu-tools
       - inxi
       - iotop
-      - krusader
       - libnotify
       - libvirt
       - libvirt-daemon
