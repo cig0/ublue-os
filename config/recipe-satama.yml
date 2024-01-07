@@ -32,7 +32,6 @@ modules:
       - borgbackup
       - bridge-utils
       - bat
-      - bitlbee
       - btop
       - btrfsd
       - cargo
