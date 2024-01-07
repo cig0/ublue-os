@@ -45,6 +45,7 @@ modules:
       - duf
       - edk2-ovmf
       - emacs
+      - perl-Image-ExifTool
       - fd-find
       - fdupes
       - fuzzel
