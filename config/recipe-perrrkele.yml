@@ -153,6 +153,7 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
+      - GNOME Sushi: org.gnome.NautilusPreviewer
       - ArmCord: xyz.armcord.ArmCord
       - ASCII Draw: io.github.nokse22.asciidraw
       - Brave: com.brave.Browser
