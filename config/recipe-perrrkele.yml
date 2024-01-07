@@ -154,35 +154,35 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      - GNOME Sushi: org.gnome.NautilusPreviewer
-      - ArmCord: xyz.armcord.ArmCord
-      - ASCII Draw: io.github.nokse22.asciidraw
-      - Brave: com.brave.Browser
-      - Darktable: org.darktable.Darktable
-      - Flatseal: com.github.tchx84.Flatseal
-      - Flatsweep: io.github.giantpinkrobots.flatsweep
-      - Inkscape: org.inkscape.Inkscape
-      - KeePassXC: org.keepassxc.KeePassXC
-      - Letterpress: io.gitlab.gregorni.Letterpress
-      - LightZone: io.github.ktgw0316.LightZone
-      - LibreOffice: org.libreoffice.LibreOffice
-      - MPV: io.mpv.Mpv
-      - Nheko: io.github.NhekoReborn.Nheko
-      - Nicotine: org.nicotine_plus.Nicotine
-      - OpenLens: dev.k8slens.OpenLens
-      - Parabolic: org.nickvision.tubeconverter
-      - Podman Desktop: io.podman_desktop.PodmanDesktop
-      - Shortwave: de.haeckerfelix.Shortwave
-      - Slack: com.slack.Slack
-      - Telegram: org.telegram.desktop
-      - The GIMP: org.gimp.GIMP
-      - Todoist: com.todoist.Todoist
-      - Tor Browser: com.github.micahflee.torbrowser-launcher
-      - Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
-      - Vorta: com.borgbase.Vorta
-      - Warehouse: io.github.flattool.Warehouse
-      - YouTube Downloader: io.github.aandrew_me.ytdn
-      - Zoom: us.zoom.Zoom
+      #- GNOME Sushi: org.gnome.NautilusPreviewer
+      #- ArmCord: xyz.armcord.ArmCord
+      #- ASCII Draw: io.github.nokse22.asciidraw
+      #- Brave: com.brave.Browser
+      #- Darktable: org.darktable.Darktable
+      #z- Flatseal: com.github.tchx84.Flatseal
+      #- Flatsweep: io.github.giantpinkrobots.flatsweep
+      #- Inkscape: org.inkscape.Inkscape
+      #- KeePassXC: org.keepassxc.KeePassXC
+      #- Letterpress: io.gitlab.gregorni.Letterpress
+      #- LightZone: io.github.ktgw0316.LightZone
+      #- LibreOffice: org.libreoffice.LibreOffice
+      #- MPV: io.mpv.Mpv
+      #- Nheko: io.github.NhekoReborn.Nheko
+      #- Nicotine: org.nicotine_plus.Nicotine
+      #- OpenLens: dev.k8slens.OpenLens
+      #- Parabolic: org.nickvision.tubeconverter
+      #- Podman Desktop: io.podman_desktop.PodmanDesktop
+      #- Shortwave: de.haeckerfelix.Shortwave
+      #- Slack: com.slack.Slack
+      #- Telegram: org.telegram.desktop
+      #- The GIMP: org.gimp.GIMP
+      #- Todoist: com.todoist.Todoist
+      #- Tor Browser: com.github.micahflee.torbrowser-launcher
+      #- Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
+      #- Vorta: com.borgbase.Vorta
+      #- Warehouse: io.github.flattool.Warehouse
+      #- YouTube Downloader: io.github.aandrew_me.ytdn
+      #- Zoom: us.zoom.Zoom
 
   - type: script
     scripts:
