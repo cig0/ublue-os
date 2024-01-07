@@ -66,6 +66,7 @@ modules:
       - gstreamer1-plugins-bad-free-fluidsynth
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
+      - guake
       - guestfs-tools
       - httpie
       - hugo
