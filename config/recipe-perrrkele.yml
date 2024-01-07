@@ -52,6 +52,7 @@ modules:
       - gh
       - git-lfs
       - glab
+      - glances
       - golang
       - goaccess
       - golang-x-tools-gopls
