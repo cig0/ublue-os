@@ -130,7 +130,6 @@ modules:
       - waydroid-selinux
       - weechat
       - wl-clipboard
-      - yakuake
       - zoxide
     remove:
       # - firefox # default firefox removed in favor of flatpak
