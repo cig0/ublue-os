@@ -4,7 +4,7 @@ name: perrrkele
 description: Laptop / Intel CPU / Intel GPU / KDE
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bluefin-dx
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -66,7 +66,6 @@ modules:
       - gstreamer1-plugins-bad-free-fluidsynth
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
-      - guake
       - guestfs-tools
       - httpie
       - hugo
@@ -77,6 +76,7 @@ modules:
       - intel-gpu-tools
       - inxi
       - iotop
+      - krusader
       - libnotify
       - libvirt
       - libvirt-daemon
@@ -116,7 +116,6 @@ modules:
       - syncthing
       - tcpdump
       - telnet
-      - terminator
       - tesseract
       - tokei
       - translate-shell
@@ -131,6 +130,7 @@ modules:
       - waydroid-selinux
       - weechat
       - wl-clipboard
+      - yakuake
       - zoxide
     remove:
       # - firefox # default firefox removed in favor of flatpak
@@ -141,48 +141,57 @@ modules:
       - justfiles # add "!include /usr/share/ublue-os/just/100-bling.just"
                   # in your custom.just (added by default) or local justfile
       - nix-installer # shell shortcuts for determinate system's nix installers
-      - ublue-os-wallpapers
+      # - ublue-os-wallpapers
       - ublue-update # https://github.com/ublue-os/ublue-update
       # - 1password # install 1Password (stable) and `op` CLI tool
       # - dconf-update-service # a service unit that updates the dconf db on boot
       # - devpod # https://devpod.sh/ as an rpm
       # - gnome-vrr # enables gnome-vrr for your image
       # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
-      # - laptop # installs TLP and configures your system for laptop usage
-      # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
+      - laptop # installs TLP and configures your system for laptop usage
+      - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      #- GNOME Sushi: org.gnome.NautilusPreviewer
-      #- ArmCord: xyz.armcord.ArmCord
-      #- ASCII Draw: io.github.nokse22.asciidraw
-      #- Brave: com.brave.Browser
-      #- Darktable: org.darktable.Darktable
-      #z- Flatseal: com.github.tchx84.Flatseal
-      #- Flatsweep: io.github.giantpinkrobots.flatsweep
-      #- Inkscape: org.inkscape.Inkscape
-      #- KeePassXC: org.keepassxc.KeePassXC
-      #- Letterpress: io.gitlab.gregorni.Letterpress
-      #- LightZone: io.github.ktgw0316.LightZone
-      #- LibreOffice: org.libreoffice.LibreOffice
-      #- MPV: io.mpv.Mpv
-      #- Nheko: io.github.NhekoReborn.Nheko
-      #- Nicotine: org.nicotine_plus.Nicotine
-      #- OpenLens: dev.k8slens.OpenLens
-      #- Parabolic: org.nickvision.tubeconverter
-      #- Podman Desktop: io.podman_desktop.PodmanDesktop
-      #- Shortwave: de.haeckerfelix.Shortwave
-      #- Slack: com.slack.Slack
-      #- Telegram: org.telegram.desktop
-      #- The GIMP: org.gimp.GIMP
-      #- Todoist: com.todoist.Todoist
-      #- Tor Browser: com.github.micahflee.torbrowser-launcher
-      #- Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
-      #- Vorta: com.borgbase.Vorta
-      #- Warehouse: io.github.flattool.Warehouse
-      #- YouTube Downloader: io.github.aandrew_me.ytdn
-      #- Zoom: us.zoom.Zoom
+      - KDE Akregator: org.kde.akregator
+      - KDE digiKam: org.kde.digikam
+      - KDE Gwenview: org.kde.gwenview
+      - KDE Kcalc: org.kde.kcalc
+      - KDE KColorChooser: org.kde.kcolorchooser
+      - KDE KDiff3: org.kde.kdiff3
+      - KDE Kompare: org.kde.kompare
+      - KDE Krita: org.kde.krita
+      - KDE Neochat: org.kde.neochat
+      - KDE Okular: org.kde.okular
+      - ArmCord: xyz.armcord.ArmCord
+      - ASCII Draw: io.github.nokse22.asciidraw
+      - Brave: com.brave.Browser
+      - Darktable: org.darktable.Darktable
+      - Flatseal: com.github.tchx84.Flatseal
+      - Flatsweep: io.github.giantpinkrobots.flatsweep
+      - Inkscape: org.inkscape.Inkscape
+      - KeePassXC: org.keepassxc.KeePassXC
+      - Letterpress: io.gitlab.gregorni.Letterpress
+      - LightZone: io.github.ktgw0316.LightZone
+      - LibreOffice: org.libreoffice.LibreOffice
+      - MPV: io.mpv.Mpv
+      - Nheko: io.github.NhekoReborn.Nheko
+      - Nicotine: org.nicotine_plus.Nicotine
+      - OpenLens: dev.k8slens.OpenLens
+      - Parabolic: org.nickvision.tubeconverter
+      - Podman Desktop: io.podman_desktop.PodmanDesktop
+      - Shortwave: de.haeckerfelix.Shortwave
+      - Slack: com.slack.Slack
+      - Telegram: org.telegram.desktop
+      - The GIMP: org.gimp.GIMP
+      - Todoist: com.todoist.Todoist
+      - Tor Browser: com.github.micahflee.torbrowser-launcher
+      - Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
+      - Vorta: com.borgbase.Vorta
+      - Warehouse: io.github.flattool.Warehouse
+      - YouTube Downloader: io.github.aandrew_me.ytdn
+      - Zoom: us.zoom.Zoom
 
   - type: script
     scripts:
