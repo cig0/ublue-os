@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: perrrkele
 # description will be included in the image's metadata
-description: Laptop / Intel CPU / Intel GPU / KDE
+description: Laptop / Intel CPU / Intel GPU / GNOME
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
@@ -24,7 +24,6 @@ modules:
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
-      - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
       - 'gcc-c++'
       - ansible
@@ -34,7 +33,6 @@ modules:
       - borgbackup
       - bridge-utils
       - bat
-      - bitlbee
       - btop
       - btrfsd
       - cargo
@@ -45,6 +43,7 @@ modules:
       - duf
       - edk2-ovmf
       - emacs
+      - perl-Image-ExifTool
       - fd-find
       - fdupes
       - fuzzel

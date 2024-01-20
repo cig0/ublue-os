@@ -32,7 +32,6 @@ modules:
       - borgbackup
       - bridge-utils
       - bat
-      - bitlbee
       - btop
       - btrfsd
       - cargo
@@ -43,6 +42,7 @@ modules:
       - duf
       - edk2-ovmf
       - emacs
+      - perl-Image-ExifTool
       - fd-find
       - fdupes
       - fzf
