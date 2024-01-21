@@ -36,7 +36,6 @@ modules:
       - btop
       - btrfsd
       - cargo
-      - code
       - difftastic
       - dnstracer
       - dua-cli
