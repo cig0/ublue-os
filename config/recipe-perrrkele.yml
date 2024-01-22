@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: perrrkele
 # description will be included in the image's metadata
-description: Laptop / Intel CPU / Intel GPU / GNOME
+description: Laptop / Intel CPU / Intel GPU / KDE
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
