@@ -52,6 +52,7 @@ modules:
       - glab
       - glances
       - golang
+      - golang-github-golangci-lint-1-devel
       - goaccess
       - golang-x-tools-gopls
       - grpcurl
