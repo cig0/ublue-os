@@ -37,6 +37,7 @@ modules:
       - btop
       - btrfsd
       - cargo
+      - code
       - difftastic
       - dnstracer
       - dua-cli
@@ -156,7 +157,7 @@ modules:
       - KDE Akregator: org.kde.akregator
       - KDE digiKam: org.kde.digikam
       - KDE Gwenview: org.kde.gwenview
-      - KDE Kcalc: org.kde.kcalc
+      - KDE KCalc: org.kde.kcalc
       - KDE KColorChooser: org.kde.kcolorchooser
       - KDE KDiff3: org.kde.kdiff3
       - KDE Kompare: org.kde.kompare
@@ -167,6 +168,7 @@ modules:
       - ASCII Draw: io.github.nokse22.asciidraw
       - Brave: com.brave.Browser
       - Darktable: org.darktable.Darktable
+      - Discord: com.discordapp.Discord
       - Flatseal: com.github.tchx84.Flatseal
       - Flatsweep: io.github.giantpinkrobots.flatsweep
       - Inkscape: org.inkscape.Inkscape
