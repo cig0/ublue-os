@@ -88,6 +88,7 @@ modules:
       - ncdu # Needs urgent version bump!
       - neofetch
       - neovim
+      - nfs-utils
       - nmap
       - nodejs
       - oathtool
@@ -99,6 +100,7 @@ modules:
       - python3-psutil
       - qemu-kvm
       - ripgrep
+      - rpcbind
       - s-tui
       - shellcheck
       - strace
