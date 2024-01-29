@@ -76,8 +76,6 @@ modules:
       - intel-gpu-tools
       - inxi
       - iotop
-      - kde-connect
-      - kdeconnectd
       - krusader
       - libnotify
       - libvirt
