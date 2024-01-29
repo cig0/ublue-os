@@ -75,6 +75,8 @@ modules:
       - imhex-patterns
       - inxi
       - iotop
+      - kde-connect
+      - kdeconnectd
       - krusader
       - libnotify
       - libvirt
