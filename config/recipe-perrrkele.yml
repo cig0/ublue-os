@@ -114,6 +114,7 @@ modules:
       #- sublime-merge
       #- sublime-text
       - syncthing
+      - sysprof
       #- tcpdump
       #- telnet
       #- tesseract
