@@ -27,7 +27,7 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
       - 'gcc-c++'
-      #- ansible
+      - ansible
       #- awscli2
       #- bat
       - bemenu
@@ -93,7 +93,7 @@ modules:
       - mold
       #- ncdu # Needs urgent version bump!
       #- neofetch
-      #- neovim
+      - neovim
       - nfs-utils
       #- nmap
       #- nodejs
