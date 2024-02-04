@@ -27,33 +27,32 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
       - 'gcc-c++'
-      - ansible
-      - awscli2
-      - borgbackup
+      #- ansible
+      #- awscli2
+      #- bat
+      #- borgbackup
       - bridge-utils
-      - bat
-      - btop
+      #- btop
       - btrfsd
-      - cargo
-      - code
-      - difftastic
-      - dnstracer
-      - dua-cli
-      - duf
+      #- cargo
+      #- difftastic
+      #- dnstracer
+      #- dua-cli
+      #- duf
       - edk2-ovmf
       - emacs
-      - perl-Image-ExifTool
-      - fd-find
-      - fdupes
-      - fzf
-      - gh
-      - git-lfs
-      - glab
-      - glances
-      - golang
-      - goaccess
-      - golang-x-tools-gopls
-      - grpcurl
+      #- perl-Image-ExifTool
+      #- fd-find
+      #- fdupes
+      #- fzf
+      #- gh
+      #- git-lfs
+      #- glab
+      #- glances
+      #- golang
+      #- goaccess
+      #- golang-x-tools-gopls
+      #- grpcurl
       # Needs: fedora-cisco-openh264.repo
       #- gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
@@ -64,12 +63,12 @@ modules:
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
       - guestfs-tools
-      - httpie
-      - hugo
-      - hyperfine
+      #- httpie
+      #- hugo
+      #- hyperfine
       - intel-gpu-tools
-      - inxi
-      - iotop
+      #- inxi
+      #- iotop
       - libnotify
       - libvirt
       - libvirt-daemon
@@ -80,50 +79,50 @@ modules:
       - libvirt-daemon-driver-qemu
       - libvirt-daemon-driver-secret
       - libvirt-daemon-driver-storage-core
-      - lftp
-      - lnav
-      - lynis
-      - mc
+      #- lftp
+      #- lnav
+      #- lynis
+      #- mc
       - mold
-      - ncdu # Needs urgent version bump!
-      - neofetch
-      - neovim
+      #- ncdu # Needs urgent version bump!
+      #- neofetch
+      #- neovim
       - nfs-utils
-      - nmap
-      - nodejs
-      - oathtool
+      #- nmap
+      #- nodejs
+      #- oathtool
       - pinentry-tty
-      - podman-compose
-      - powertop
+      #- podman-compose
+      #- powertop
       - python3-ipython
       - python3-pip
       - python3-psutil
       - qemu-kvm
-      - ripgrep
+      #- ripgrep
       - rpcbind
-      - s-tui
-      - shellcheck
-      - strace
+      #- s-tui
+      #- shellcheck
+      #- strace
       #- sublime-merge
       #- sublime-text
       - syncthing
-      - tcpdump
-      - telnet
-      - tesseract
-      - tokei
-      - translate-shell
-      - ugrep # Needs urgent version bump!
-      - vagrant
-      - vdpauinfo
+      #- tcpdump
+      #- telnet
+      #- tesseract
+      #- tokei
+      #- translate-shell
+      #- ugrep # Needs urgent version bump!
+      #- vagrant
+      #- vdpauinfo
       - virt-install
       - virt-manager
       - virt-top
       - virt-viewer
       - waydroid
       - waydroid-selinux
-      - weechat
-      - wl-clipboard
-      - zoxide
+      #- weechat
+      #- wl-clipboard
+      #- zoxide
     remove:
       # - firefox # default firefox removed in favor of flatpak
       # - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
