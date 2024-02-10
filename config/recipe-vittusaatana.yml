@@ -12,13 +12,14 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 modules:
   - type: files
     files:
-      - usr: /usr # copy static configurations
-                  #
-                  # copies config/files/usr into your image's /usr
-                  #
-                  # configuration you wish to end up in /etc/ on the booted system
-                  # should be added into /usr/etc/ as that is the proper "distro"
-                  # config directory on ostree. Read more in the files module's README
+      - usr:
+          /usr # copy static configurations
+          #
+          # copies config/files/usr into your image's /usr
+          #
+          # configuration you wish to end up in /etc/ on the booted system
+          # should be added into /usr/etc/ as that is the proper "distro"
+          # config directory on ostree. Read more in the files module's README
 
   - type: rpm-ostree
     repos:
@@ -26,7 +27,7 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
-      - 'gcc-c++'
+      - "gcc-c++"
       - ansible
       #- awscli2
       #- bat
@@ -75,6 +76,7 @@ modules:
       - imhex-patterns
       #- inxi
       #- iotop
+      - kjournald
       - krusader
       - libnotify
       - libvirt
@@ -136,57 +138,57 @@ modules:
       # - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
   - type: default-flatpaks
-    notify: true   # Send notification after install/uninstall is finished (true/false)
+    notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       # If no repo information is specified, Flathub will be used by default
       repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-      # - org.gnome.Loupe
-      # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).
-      # Only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Multiple install of same flatpaks with different branches is not supported.
-      - KDE Akregator: org.kde.akregator
-      - KDE digiKam: org.kde.digikam
-      - KDE Gwenview: org.kde.gwenview
-      - KDE KCalc: org.kde.kcalc
-      - KDE KColorChooser: org.kde.kcolorchooser
-      - KDE KDiff3: org.kde.kdiff3
-      - KDE Kompare: org.kde.kompare
-      - KDE Krita: org.kde.krita
-      - KDE Neochat: org.kde.neochat
-      - KDE Okular: org.kde.okular
-      - ArmCord: xyz.armcord.ArmCord
-      - ASCII Draw: io.github.nokse22.asciidraw
-      - Brave: com.brave.Browser
-      - Darktable: org.darktable.Darktable
-      - Discord: com.discordapp.Discord
-      - Flatseal: com.github.tchx84.Flatseal
-      - Flatsweep: io.github.giantpinkrobots.flatsweep
-      - Inkscape: org.inkscape.Inkscape
-      - KeePassXC: org.keepassxc.KeePassXC
-      - Letterpress: io.gitlab.gregorni.Letterpress
-      - LightZone: io.github.ktgw0316.LightZone
-      - LibreOffice: org.libreoffice.LibreOffice
-      - MPV: io.mpv.Mpv
-      - Nheko: io.github.NhekoReborn.Nheko
-      - Nicotine: org.nicotine_plus.Nicotine
-      - OpenLens: dev.k8slens.OpenLens
-      - Parabolic: org.nickvision.tubeconverter
-      - Podman Desktop: io.podman_desktop.PodmanDesktop
-      - Shortwave: de.haeckerfelix.Shortwave
-      - Slack: com.slack.Slack
-      - Telegram: org.telegram.desktop
-      - The GIMP: org.gimp.GIMP
-      - Todoist: com.todoist.Todoist
-      - Tor Browser: com.github.micahflee.torbrowser-launcher
-      - Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
-      - Vorta: com.borgbase.Vorta
-      - Warehouse: io.github.flattool.Warehouse
-      - YouTube Downloader: io.github.aandrew_me.ytdn
-      - Zoom: us.zoom.Zoom
+        # - org.gnome.Loupe
+        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+        # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).
+        # Only normal flatpak applications are (like Floorp Lightning web browser in this example).
+        # Multiple install of same flatpaks with different branches is not supported.
+        - KDE Akregator: org.kde.akregator
+        - KDE digiKam: org.kde.digikam
+        - KDE Gwenview: org.kde.gwenview
+        - KDE KCalc: org.kde.kcalc
+        - KDE KColorChooser: org.kde.kcolorchooser
+        - KDE KDiff3: org.kde.kdiff3
+        - KDE Kompare: org.kde.kompare
+        - KDE Krita: org.kde.krita
+        - KDE Neochat: org.kde.neochat
+        - KDE Okular: org.kde.okular
+        - ArmCord: xyz.armcord.ArmCord
+        - ASCII Draw: io.github.nokse22.asciidraw
+        - Brave: com.brave.Browser
+        - Darktable: org.darktable.Darktable
+        - Discord: com.discordapp.Discord
+        - Flatseal: com.github.tchx84.Flatseal
+        - Flatsweep: io.github.giantpinkrobots.flatsweep
+        - Inkscape: org.inkscape.Inkscape
+        - KeePassXC: org.keepassxc.KeePassXC
+        - Letterpress: io.gitlab.gregorni.Letterpress
+        - LightZone: io.github.ktgw0316.LightZone
+        - LibreOffice: org.libreoffice.LibreOffice
+        - MPV: io.mpv.Mpv
+        - Nheko: io.github.NhekoReborn.Nheko
+        - Nicotine: org.nicotine_plus.Nicotine
+        - OpenLens: dev.k8slens.OpenLens
+        - Parabolic: org.nickvision.tubeconverter
+        - Podman Desktop: io.podman_desktop.PodmanDesktop
+        - Shortwave: de.haeckerfelix.Shortwave
+        - Slack: com.slack.Slack
+        - Telegram: org.telegram.desktop
+        - The GIMP: org.gimp.GIMP
+        - Todoist: com.todoist.Todoist
+        - Tor Browser: com.github.micahflee.torbrowser-launcher
+        - Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
+        - Vorta: com.borgbase.Vorta
+        - Warehouse: io.github.flattool.Warehouse
+        - YouTube Downloader: io.github.aandrew_me.ytdn
+        - Zoom: us.zoom.Zoom
 
       remove:
       # - org.gnome.eog
@@ -201,4 +203,3 @@ modules:
     scripts:
       # this sets up the proper policy & signing files for signed images to work
       - signing.sh
-
