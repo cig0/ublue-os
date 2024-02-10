@@ -175,6 +175,7 @@ modules:
         - MPV: io.mpv.Mpv
         - Nheko: io.github.NhekoReborn.Nheko
         - Nicotine: org.nicotine_plus.Nicotine
+        - OBS Studio: com.obsproject.Studio
         - OpenLens: dev.k8slens.OpenLens
         - Parabolic: org.nickvision.tubeconverter
         - Podman Desktop: io.podman_desktop.PodmanDesktop
