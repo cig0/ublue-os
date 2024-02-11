@@ -27,42 +27,20 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
-      ###############################################
-      #                                             #
-      #  Commented packages are installed with Nix  #
-      #                                             #
-      ###############################################
+      ##################################
+      #  When possible, CLI tools are  #
+      #       installed with Nix       #
+      ##################################
       - "gcc-c++"
       - ansible
-      #- awscli2
-      #- bat
       - bemenu
       - blender
-      #- borgbackup
       - bridge-utils
-      #- btop
       - btrfsd
-      #- cargo
       - code
-      #- difftastic
-      #- dnstracer
-      #- dua-cli
-      #- duf
       - edk2-ovmf
       - emacs
-      #- perl-Image-ExifTool
-      #- fd-find
-      #- fdupes
       - fuzzel
-      #- fzf
-      #- gh
-      #- git-lfs
-      #- glab
-      #- glances
-      #- golang
-      #- goaccess
-      #- golang-x-tools-gopls
-      #- grpcurl
       # Needs: fedora-cisco-openh264.repo
       #- gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
@@ -73,14 +51,9 @@ modules:
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
       - guestfs-tools
-      #- httpie
-      #- hugo
-      #- hyperfine
       - hyprland
       - imhex
       - imhex-patterns
-      #- inxi
-      #- iotop
       - kjournald
       - krusader
       - libnotify
@@ -93,51 +66,24 @@ modules:
       - libvirt-daemon-driver-qemu
       - libvirt-daemon-driver-secret
       - libvirt-daemon-driver-storage-core
-      #- lftp
-      #- lnav
-      #- lynis
-      #- mc
       - mold
-      #- ncdu # Needs urgent version bump!
-      #- neofetch
       - neovim
       - nfs-utils
-      #- nmap
-      #- nodejs
-      #- oathtool
       - pinentry-tty
-      #- podman-compose
       - python3-ipython
       - python3-pip
       - python3-psutil
       - qemu-kvm
-      #- ripgrep
       - rpcbind
-      #- s-tui
-      #- shellcheck
-      #- strace
-      #- sublime-merge
-      #- sublime-text
       - syncthing
       - sysprof
-      #- tcpdump
-      #- telnet
-      #- tesseract
-      #- tokei
-      #- translate-shell
-      #- ugrep # Needs urgent version bump!
-      #- vagrant
-      #- vdpauinfo
       - virt-install
       - virt-manager
       - virt-top
       - virt-viewer
       - waydroid
       - waydroid-selinux
-      #- weechat
-      #- wl-clipboard
       - yakuake
-      #- zoxide
     remove:
       # - firefox # default firefox removed in favor of flatpak
       # - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -155,46 +101,46 @@ modules:
         # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).
         # Only normal flatpak applications are (like Floorp Lightning web browser in this example).
         # Multiple install of same flatpaks with different branches is not supported.
-        - KDE Akregator: org.kde.akregator
-        - KDE digiKam: org.kde.digikam
-        - KDE Gwenview: org.kde.gwenview
-        - KDE KCalc: org.kde.kcalc
-        - KDE KColorChooser: org.kde.kcolorchooser
-        - KDE KDiff3: org.kde.kdiff3
-        - KDE Kompare: org.kde.kompare
-        - KDE Krita: org.kde.krita
-        - KDE Neochat: org.kde.neochat
-        - KDE Okular: org.kde.okular
-        - ArmCord: xyz.armcord.ArmCord
-        - ASCII Draw: io.github.nokse22.asciidraw
-        - Brave: com.brave.Browser
-        - Darktable: org.darktable.Darktable
-        - Discord: com.discordapp.Discord
-        - Flatseal: com.github.tchx84.Flatseal
-        - Flatsweep: io.github.giantpinkrobots.flatsweep
-        - Inkscape: org.inkscape.Inkscape
-        - KeePassXC: org.keepassxc.KeePassXC
-        - Letterpress: io.gitlab.gregorni.Letterpress
-        - LightZone: io.github.ktgw0316.LightZone
-        - LibreOffice: org.libreoffice.LibreOffice
-        - MPV: io.mpv.Mpv
-        - Nheko: io.github.NhekoReborn.Nheko
-        - Nicotine: org.nicotine_plus.Nicotine
-        - OBS Studio: com.obsproject.Studio
-        - OpenLens: dev.k8slens.OpenLens
-        - Parabolic: org.nickvision.tubeconverter
-        - Podman Desktop: io.podman_desktop.PodmanDesktop
-        - Shortwave: de.haeckerfelix.Shortwave
-        - Slack: com.slack.Slack
-        - Telegram: org.telegram.desktop
-        - The GIMP: org.gimp.GIMP
-        - Todoist: com.todoist.Todoist
-        - Tor Browser: com.github.micahflee.torbrowser-launcher
-        - Ultimate Media Downloader: com.ktechpit.ultimate-media-downloader
-        - Vorta: com.borgbase.Vorta
-        - Warehouse: io.github.flattool.Warehouse
-        - YouTube Downloader: io.github.aandrew_me.ytdn
-        - Zoom: us.zoom.Zoom
+        - org.kde.akregator
+        - org.kde.digikam
+        - org.kde.gwenview
+        - org.kde.kcalc
+        - org.kde.kcolorchooser
+        - org.kde.kdiff3
+        - org.kde.kompare
+        - org.kde.krita
+        - org.kde.neochat
+        - org.kde.okular
+        - xyz.armcord.ArmCord
+        - io.github.nokse22.asciidraw
+        - com.brave.Browser
+        - org.darktable.Darktable
+        - com.discordapp.Discord
+        - com.github.tchx84.Flatseal
+        - io.github.giantpinkrobots.flatsweep
+        - org.inkscape.Inkscape
+        - org.keepassxc.KeePassXC
+        - io.gitlab.gregorni.Letterpress
+        - io.github.ktgw0316.LightZone
+        - org.libreoffice.LibreOffice
+        - io.mpv.Mpv
+        - io.github.NhekoReborn.Nheko
+        - org.nicotine_plus.Nicotine
+        - com.obsproject.Studio
+        - dev.k8slens.OpenLens
+        - org.nickvision.tubeconverter
+        - io.podman_desktop.PodmanDesktop
+        - de.haeckerfelix.Shortwave
+        - com.slack.Slack
+        - org.telegram.desktop
+        - org.gimp.GIMP
+        - com.todoist.Todoist
+        - com.github.micahflee.torbrowser-launcher
+        - com.ktechpit.ultimate-media-downloader
+        - com.borgbase.Vorta
+        - io.github.flattool.Warehouse
+        - io.github.aandrew_me.ytdn
+        - us.zoom.Zoom
 
       remove:
       # - org.gnome.eog

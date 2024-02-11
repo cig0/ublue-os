@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: satama
 # description will be included in the image's metadata
-description: Lab & media streaming headless MiniPC / Intel CPU / Intel GPU / SwayWM
+description: Headless MiniPC lab, NAS, and media streaming / Intel CPU / Intel GPU / SwayWM
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/sericea-main
@@ -27,38 +27,16 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
-      ###############################################
-      #                                             #
-      #  Commented packages are installed with Nix  #
-      #                                             #
-      ###############################################
+      ##################################
+      #  When possible, CLI tools are  #
+      #       installed with Nix       #
+      ##################################
       - "gcc-c++"
       - ansible
-      #- awscli2
-      #- bat
-      #- borgbackup
       - bridge-utils
-      #- btop
       - btrfsd
-      #- cargo
-      #- difftastic
-      #- dnstracer
-      #- dua-cli
-      #- duf
       - edk2-ovmf
       - emacs
-      #- perl-Image-ExifTool
-      #- fd-find
-      #- fdupes
-      #- fzf
-      #- gh
-      #- git-lfs
-      #- glab
-      #- glances
-      #- golang
-      #- goaccess
-      #- golang-x-tools-gopls
-      #- grpcurl
       # Needs: fedora-cisco-openh264.repo
       #- gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
@@ -69,12 +47,7 @@ modules:
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
       - guestfs-tools
-      #- httpie
-      #- hugo
-      #- hyperfine
       - intel-gpu-tools
-      #- inxi
-      #- iotop
       - libnotify
       - libvirt
       - libvirt-daemon
@@ -85,50 +58,22 @@ modules:
       - libvirt-daemon-driver-qemu
       - libvirt-daemon-driver-secret
       - libvirt-daemon-driver-storage-core
-      #- lftp
-      #- lnav
-      #- lynis
-      #- mc
       - mold
-      #- ncdu # Needs urgent version bump!
-      #- neofetch
       - neovim
       - nfs-utils
-      #- nmap
-      #- nodejs
-      #- oathtool
       - pinentry-tty
-      #- podman-compose
-      #- powertop
       - python3-ipython
       - python3-pip
       - python3-psutil
       - qemu-kvm
-      #- ripgrep
       - rpcbind
-      #- s-tui
-      #- shellcheck
-      #- strace
-      #- sublime-merge
-      #- sublime-text
       - syncthing
-      #- tcpdump
-      #- telnet
-      #- tesseract
-      #- tokei
-      #- translate-shell
-      #- ugrep # Needs urgent version bump!
-      #- vagrant
-      #- vdpauinfo
       - virt-install
       - virt-manager
       - virt-top
       - virt-viewer
       - waydroid
       - waydroid-selinux
-      #- weechat
-      #- wl-clipboard
-      #- zoxide
     remove:
       # - firefox # default firefox removed in favor of flatpak
       # - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems

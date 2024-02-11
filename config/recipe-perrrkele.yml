@@ -27,9 +27,10 @@ modules:
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
       - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
-      ###########################################
-      #  Most CLI tools are installed with Nix  #
-      ###########################################
+      ##################################
+      #  When possible, CLI tools are  #
+      #       installed with Nix       #
+      ##################################
       - "gcc-c++"
       - ansible
       - bemenu
