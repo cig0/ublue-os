@@ -113,6 +113,7 @@ modules:
         - org.kde.okular
         - xyz.armcord.ArmCord
         - io.github.nokse22.asciidraw
+        - com.bitwarden.desktop
         - com.brave.Browser
         - org.darktable.Darktable
         - com.discordapp.Discord
@@ -141,6 +142,7 @@ modules:
         - io.github.flattool.Warehouse
         - io.github.aandrew_me.ytdn
         - us.zoom.Zoom
+        - im.riot.Riot
 
       remove:
       # - org.gnome.eog
