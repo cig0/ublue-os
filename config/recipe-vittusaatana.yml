@@ -24,8 +24,8 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
-      - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
+      #- https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
+      #- https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
     install:
       ##################################
       #  When possible, CLI tools are  #
