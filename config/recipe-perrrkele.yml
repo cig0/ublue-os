@@ -24,8 +24,10 @@ modules:
   - type: rpm-ostree
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/sublime-text.repo
-      - https://raw.githubusercontent.com/cig0/ublue-os/live/custom/vscode.repo
+      - https://raw.githubusercontent.com/cig0/ublue-os/live/config/files/usr/etc/yum.repos.d/fedora-cisco-openh264.repo
+      - https://raw.githubusercontent.com/cig0/ublue-os/live/config/files/usr/etc/yum.repos.d/sublime-text.repo
+      - https://raw.githubusercontent.com/cig0/ublue-os/live/config/files/usr/etc/yum.repos.d/vscode.repo
+
     install:
       ##################################
       #  When possible, CLI tools are  #
@@ -33,16 +35,14 @@ modules:
       ##################################
       - "gcc-c++"
       - ansible
-      - bemenu
       - blender
       - bridge-utils
       - btrfsd
       - code
       - edk2-ovmf
       - emacs
-      - fuzzel
       # Needs: fedora-cisco-openh264.repo
-      #- gstreamer1-plugin-openh264
+      - gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
       - gstreamer1-plugin-mpg123
       - gstreamer1-plugins-bad-free
@@ -51,7 +51,6 @@ modules:
       - gstreamer1-plugins-ugly
       - gstreamer1-vaapi
       - guestfs-tools
-      - hyprland
       - imhex
       - imhex-patterns
       - intel-gpu-tools
@@ -133,6 +132,7 @@ modules:
         - dev.k8slens.OpenLens
         - org.nickvision.tubeconverter
         - io.podman_desktop.PodmanDesktop
+        - com.protonvpn.www
         - de.haeckerfelix.Shortwave
         - com.slack.Slack
         - org.telegram.desktop
