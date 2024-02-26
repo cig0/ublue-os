@@ -42,7 +42,7 @@ modules:
       - edk2-ovmf
       - emacs
       # Needs: fedora-cisco-openh264.repo
-      #- gstreamer1-plugin-openh264
+      - gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
       - gstreamer1-plugin-mpg123
       - gstreamer1-plugins-bad-free
@@ -74,6 +74,8 @@ modules:
       - python3-psutil
       - qemu-kvm
       - rpcbind
+      - sublime-text
+      - sublime-merge
       - syncthing
       - sysprof
       - virt-install
