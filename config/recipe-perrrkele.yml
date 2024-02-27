@@ -70,6 +70,7 @@ modules:
       - neovim
       - nfs-utils
       - pinentry-tty
+      - powertop
       - python3-ipython
       - python3-pip
       - python3-psutil
