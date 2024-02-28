@@ -137,6 +137,7 @@ modules:
         - com.slack.Slack
         - org.telegram.desktop
         - org.gimp.GIMP
+        - com.github.d4nj1.tlpui
         - com.todoist.Todoist
         - com.github.micahflee.torbrowser-launcher
         - com.ktechpit.ultimate-media-downloader
