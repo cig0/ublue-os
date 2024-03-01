@@ -82,6 +82,7 @@ modules:
       - virt-manager
       - virt-top
       - virt-viewer
+      - warp-terminal
       - waydroid
       - waydroid-selinux
       - yakuake
