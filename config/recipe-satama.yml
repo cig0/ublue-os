@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: satama
+name: satama-startingpoint
 # description will be included in the image's metadata
 description: Headless MiniPC lab, NAS, and media streaming / Intel CPU / Intel GPU / SwayWM
 

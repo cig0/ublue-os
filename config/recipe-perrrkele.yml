@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: perrrkele
+name: perrrkele-startingpoint
 # description will be included in the image's metadata
 description: Laptop / Intel CPU / Intel GPU / KDE
 

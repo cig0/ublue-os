@@ -1,5 +1,5 @@
 # image will be published to ghcr.io/<user>/<name>
-name: vittusaatana
+name: vittusaatana-startingpoint
 # description will be included in the image's metadata
 description: Desktop / Intel GPU / Nvicrap GPU with privative crapvers. Fuck you, Nvidia! / KDE
 
