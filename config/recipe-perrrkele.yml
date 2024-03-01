@@ -84,10 +84,11 @@ modules:
       - virt-manager
       - virt-top
       - virt-viewer
-      - warp-terminal
+      #- warp-terminal
       - waydroid
       - waydroid-selinux
       - yakuake
+      - zsh
     remove:
       #- firefox # default firefox removed in favor of flatpak
       #- firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
