@@ -79,7 +79,6 @@ modules:
       - rpcbind
       - syncthing
       - sysprof
-      - tlp
       - tuned
       - tuned-profiles-atomic
       - tuned-utils
