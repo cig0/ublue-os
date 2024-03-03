@@ -45,8 +45,8 @@ jobs:
         # Don't add module configuration files, you will get errors.
         recipe:
           - recipe-perrrkele.yml
-            #- recipe-satama.yml
-            #- recipe-vittusaatana.yml
+          - recipe-satama.yml
+          - recipe-vittusaatana.yml
 # !!!
 
     steps:

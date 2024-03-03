@@ -1,10 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: startingpoint-desktop
+name: vittusaatana
 # description will be included in the image's metadata
 description: Desktop / Intel GPU / Nvicrap GPU with privative crapvers. Fuck you, Nvidia! / KDE
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-nvidia
+base-image: ghcr.io/ublue-os/kinoite-nvidia
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -43,7 +43,7 @@ modules:
       - edk2-ovmf
       - emacs
       # Needs: fedora-cisco-openh264.repo
-      #- gstreamer1-plugin-openh264
+      - gstreamer1-plugin-openh264
       - gstreamer1-plugin-libav
       - gstreamer1-plugin-mpg123
       - gstreamer1-plugins-bad-free
@@ -100,7 +100,7 @@ modules:
       repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        - org.mozilla.firefox
+        # - org.mozilla.firefox
         # - org.gnome.Loupe
         # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
         # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).

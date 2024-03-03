@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
-name: startingpoint-homelab
+name: satama
 # description will be included in the image's metadata
-description: Headless MiniPC lab, NAS, and media streaming / Intel CPU / Intel GPU / SwayWM
+description: Headless MiniPC homelab, NAS, and media streaming / Intel CPU / Intel GPU / SwayWM
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/sericea-main
@@ -90,7 +90,6 @@ modules:
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).
       # Only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Multiple install of same flatpaks with different branches is not supported.
-
       remove:
       # - org.gnome.eog
       #
