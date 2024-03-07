@@ -66,6 +66,10 @@ modules:
       - qemu-kvm
       - rpcbind
       - syncthing
+      - tuned
+      - tuned-profiles-atomic
+      - tuned-utils
+      - tuned-switcher
       - virt-install
       - virt-manager
       - virt-top
