@@ -80,6 +80,7 @@ modules:
       - rpcbind
       - syncthing
       - sysprof
+      - system76-scheduler
       - tuned
       - tuned-profiles-atomic
       - tuned-utils
