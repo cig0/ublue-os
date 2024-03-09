@@ -47,6 +47,7 @@ jobs:
           - recipe-perrrkele.yml
           - recipe-satama.yml
           - recipe-vittusaatana.yml
+          - recipe-vittusaatana-bazzite.yml
 # !!!
 
     steps:
