@@ -4,7 +4,7 @@ name: vittusaatana-aurora
 description: Desktop / Intel GPU / Nvicrap GPU with privative crapvers. Fuck you, Nvidia! / KDE
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/NiHaiden/aurora-dx-nvidia
+base-image: ghcr.io/nihaiden/aurora-dx-nvidia
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
