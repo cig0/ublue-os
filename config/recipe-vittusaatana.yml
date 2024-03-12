@@ -124,6 +124,7 @@ modules:
         - com.brave.Browser
         - org.darktable.Darktable
         - com.discordapp.Discord
+        - org.fedoraproject.MediaWriter
         - com.github.tchx84.Flatseal
         - io.github.giantpinkrobots.flatsweep
         - org.inkscape.Inkscape
