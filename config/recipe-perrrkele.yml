@@ -71,6 +71,7 @@ modules:
       - mold
       - neovim
       - nfs-utils
+      - parallel
       - pinentry-tty
       - powertop
       - python3-ipython

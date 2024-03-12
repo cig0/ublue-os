@@ -59,6 +59,7 @@ modules:
       - mold
       - neovim
       - nfs-utils
+      - parallel
       - pinentry-tty
       - python3-ipython
       - python3-pip
