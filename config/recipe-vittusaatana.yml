@@ -119,6 +119,7 @@ modules:
         - org.kde.krita
         - org.kde.neochat
         - org.kde.okular
+        - io.qt.QtCreator
         - xyz.armcord.ArmCord
         - io.github.nokse22.asciidraw
         - com.bitwarden.desktop
